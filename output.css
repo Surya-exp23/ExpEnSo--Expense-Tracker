@@ -463,6 +463,9 @@
   .w-\[850px\] {
     width: 850px;
   }
+  .w-auto {
+    width: auto;
+  }
   .w-fit {
     width: fit-content;
   }
@@ -1195,9 +1198,25 @@
       outline-style: none;
     }
   }
-  .sm\:hidden {
+  .sm\:flex-row {
     @media (width >= 40rem) {
-      display: none;
+      flex-direction: row;
+    }
+  }
+  .sm\:items-start {
+    @media (width >= 40rem) {
+      align-items: flex-start;
+    }
+  }
+  .sm\:gap-10 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
   .md\:mt-0 {
@@ -1255,6 +1274,12 @@
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .md\:text-sm {
+    @media (width >= 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
   .lg\:col-span-2 {
@@ -1324,6 +1349,30 @@ nav a:hover {
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 500;
+}
+@media (max-width: 768px) {
+  nav a {
+    font-size: 1rem;
+  }
+  .tagbox {
+    width: 18rem;
+    height: 2.5rem;
+  }
+  .tagbox .tag {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 640px) {
+  nav a {
+    font-size: 0.875rem;
+  }
+  .tagbox {
+    width: 15rem;
+    height: 2.25rem;
+  }
+  .tagbox .tag {
+    font-size: 0.8rem;
+  }
 }
 .formbox {
   z-index: 1;
