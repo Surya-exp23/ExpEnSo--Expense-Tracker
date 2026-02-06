@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        
+        
+        body::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background: #5a007a;
+            clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
+        }
+
+        .inputbox input:focus ~ label,
+        .inputbox input:valid ~ label {
+            top: 0;
+            left: 12px;
+            color: #bb00ff;
+            background: #1a1a1a;
+            font-size: 12px;
+            padding: 0 4px;
+        }
+
+        .messagebox textarea:focus ~ label {
+            left: 12px;
+            top: -10px;
+            color: #00c8ff;
+            font-size: 15px;
+            background: #1a1a1a;
+            padding: 0 4px;
+        }
+    </style>
+</head>
+<body class="h-screen w-full flex items-center justify-center bg-black relative">
+    
+    <div class="container z-[12] max-w-[1050px] w-full bg-[#1a1a1a] rounded-[13px] mx-5 shadow-[0_5px_10px_rgba(0,0,0,0.15)]">
+        <div class="content flex items-center justify-between p-6 md:p-[25px_20px] flex-col md:flex-row">
+            
+            <div class="image max-w-full md:max-w-[55%] hidden md:block">
+                <img src="assests/contact1.png" alt="" class="w-full">
+            </div>
+            
+            <form action="#" class="w-full md:w-[40%] md:mr-[30px] mt-6 md:mt-0">
+                <div class="topic text-[22px] font-medium text-purple-700 mb-4">Send us a message</div>
+                
+                <div class="inputbox h-[50px] w-full my-4 relative">
+                    <input type="text" required 
+                        class="absolute h-full w-full rounded-md text-base outline-none pl-4 bg-[#120022] border-2 border-transparent transition-all duration-300 ease-in-out focus:border-purple-600 focus:bg-[#1a1a1a] peer">
+                    <label class="absolute left-[18px] top-1/2 text-[#636c72] text-[15px] pointer-events-none -translate-y-1/2 transition-all duration-300 ease-in-out peer-focus:top-0 peer-focus:left-3 peer-focus:text-[#00c8ff] peer-focus:bg-purple-600 peer-focus:text-xs peer-focus:px-1 peer-valid:top-0 peer-valid:left-3 peer-valid:text-[#00c8ff] peer-valid:bg-white peer-valid:text-xs peer-valid:px-1">
+                        Enter your name
+                    </label>
+                </div>
+                
+                <div class="inputbox h-[50px] w-full my-4 relative">
+                    <input type="email" required 
+                        class="absolute h-full w-full rounded-md text-base outline-none pl-4 bg-[#d1f4ff] border-2 border-transparent transition-all duration-300 ease-in-out focus:border-[#00c8ff] focus:bg-white peer">
+                    <label class="absolute left-[18px] top-1/2 text-[#636c72] text-[15px] pointer-events-none -translate-y-1/2 transition-all duration-300 ease-in-out peer-focus:top-0 peer-focus:left-3 peer-focus:text-[#00c8ff] peer-focus:bg-white peer-focus:text-xs peer-focus:px-1 peer-valid:top-0 peer-valid:left-3 peer-valid:text-[#00c8ff] peer-valid:bg-white peer-valid:text-xs peer-valid:px-1">
+                        Enter your email
+                    </label>
+                </div>
+                
+                <div class="messagebox min-h-[100px] relative my-4">
+                    <textarea id="message" name="message" rows="4" cols="40" required 
+                        class="absolute h-full w-full resize-none bg-[#d1f4ff] p-4 border-2 border-transparent rounded-md outline-none transition-all duration-300 ease-in-out focus:border-[#00c3ff] focus:bg-white peer">
+                    </textarea>
+                    <label class="absolute text-base text-[#636c72] left-[18px] top-[6px] pointer-events-none transition-all duration-300 ease-in-out peer-focus:left-3 peer-focus:-top-[10px] peer-focus:text-[#00c8ff] peer-focus:text-[15px] peer-focus:bg-white peer-focus:px-1">
+                        Enter your message
+                    </label>
+                </div>
+                
+                <div class="inputbox h-[50px] w-full my-4 relative">
+                    <input type="submit" value="Send Message" 
+                        class="absolute h-full w-full text-white bg-[#00c8ff] rounded-md text-lg font-medium cursor-pointer tracking-wider transition-all duration-300 ease-in-out hover:bg-[#00bcf0] hover:shadow-[0_5px_10px_rgba(0,0,0,0.15)]">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

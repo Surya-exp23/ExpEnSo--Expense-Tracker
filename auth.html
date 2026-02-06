@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+    <link rel="shortcut icon" href="assests/lockhome.png" type="image/x-icon">
+    <title>Login page</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center min-h-screen bg-black ">
+    <!-- <img src="assests/bg1.png" alt="" class="w-fit "> -->
+    <a href="index.html" class="absolute top-0 left-0 text-white text-xl"><i class="ri-arrow-left-wide-line"></i>back</a>
+
+
+
+    <div class="cota_1  relative w-[850px] h-[550px] bg-black rounded-3xl shadow-[0_0_30px_rgba(0,0,0,0.2)] overflow-hidden shadow-[4px_4px_10px_rgba(113,0,219,0.12)]">
+
+
+        <div class="formbox  absolute w-1/2 h-full bg-black right-0  flex  justify-center items-center text-white text-center z-1">
+            <form action="" class="w-full p-8 ">
+                <h1 class="text-3xl mb-9 font-bold ">Login</h1>
+                <div class="inputbox12 relative mb-6 ">
+                    <input type="text" required class="w-full p-[13px] rounded-[8px] border-none text-xs text-white font-light pt-[13px] pr-[50px] pb-[12px] pl-[20px] bg-[#120022] focus-within:bg-black">
+                    <label class="absolute left-5 top-1/2 -translate-y-1/2 text-xs text-gray-400 pointer-events-none transition-all duration-300 ease-in-out">Username</label>
+                    <i class="ri-user-fill absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                </div>
+                <div class="inputbox22 relative mb-6">
+                    <input type="password"  required class="w-full p-[13px] rounded-[8px] border-none text-xs text-white font-light pt-[13px] pr-[50px] pb-[12px] pl-[20px] bg-[#120022] focus-within:bg-black">
+                    <label class="absolute left-5 top-1/2 -translate-y-1/2 text-xs text-gray-400 pointer-events-none transition-all duration-300 ease-in-out">Password</label>
+                    <i class="ri-git-repository-private-fill absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                </div>
+                <div class="mt-2 mb-5">
+                    <a href="#" class="text-sm hover:underline transition-all duration-300 ease-in">forget password?</a>
+                </div>
+                <button type="submit" class="w-full h-[48px] rounded-2xl bg-[#6600c5] cursor-pointer font-mono tracking-wide">LOGIN</button>
+                <p class="mt-4 mb-2 ">or login with:</p>
+                <div class="gap-2 text-sm text-purple-700 ">
+                    <a href="" class="hover:text-purple-200"><i class="ri-google-fill p-2"></i></a>
+                    <a href="" class="hover:text-purple-200"><i class="ri-facebook-fill p-2"></i></a>
+                </div>
+            </form>
+        </div>
+
+
+
+        <!-- registration portion -->
+
+        <div class="absolute w-1/2 h-full bg-black right-0  flex  justify-center items-center text-white text-center register">
+            <form action="" class="w-full p-8">
+                <h1 class="text-3xl mb-6 font-bold">Registration</h1>
+                <div class="inputbox31 relative mb-6">
+                    <input type="text"  required class="w-full p-[13px] rounded-[8px] border-none text-xs text-white font-light pt-[13px] pr-[50px] pb-[12px] pl-[20px] bg-[#120022] focus-within:bg-black">
+                    <label class="absolute left-5 top-1/2 -translate-y-1/2 text-xs text-gray-400 pointer-events-none transition-all duration-300 ease-in-out">Username</label>
+                    <i class="ri-user-fill absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                </div>
+                <div class="inputbox32 relative mb-6">
+                    <input type="email"  required class="w-full p-[13px] rounded-[8px] border-none text-xs text-white font-light pt-[13px] pr-[50px] pb-[12px] pl-[20px] bg-[#120022] focus-within:bg-black">
+                    <label class="absolute left-5 top-1/2 -translate-y-1/2 text-xs text-gray-400 pointer-events-none transition-all duration-300 ease-in-out">Email</label>
+                    <i class="ri-mail-ai-fill absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                </div>
+                <div class="inputbox33 relative mb-6">
+                    <input type="password"  required class="w-full p-[13px] rounded-[8px] border-none text-xs text-white font-light pt-[13px] pr-[50px] pb-[12px] pl-[20px] bg-[#120022] focus-within:bg-black">
+                    <label class="absolute left-5 top-1/2 -translate-y-1/2 text-xs text-gray-400 pointer-events-none transition-all duration-300 ease-in-out">Password</label>
+                    <i class="ri-git-repository-private-fill absolute right-3 top-1/2 transform -translate-y-1/2"></i>
+                </div>
+                
+                <button type="submit" class="w-full h-[48px] rounded-2xl bg-[#6600c5] cursor-pointer mt-4 font-mono tracking-wide">REGISTER</button>
+                <p class="mt-4 mb-2">or register with:</p>
+                <div class="gap-2 text-sm">
+                    <a href="#"><i class="ri-google-fill p-2"></i></a>
+                    <a href="#"><i class="ri-facebook-fill p-2"></i></a>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="tooglebox absolute w-full h-full transition-all duration-[600ms] ease-in-out z-2">
+            <div class="tooglebox_left  absolute w-1/2 h-full  flex flex-col justify-center items-center z-2 ">
+                <h1 class="text-white text-2xl">Hello,welcome!</h1>
+                <p class="mb-3 text-3xl font-bold text-white">Don't have account!</p>
+                <button class="btn_pt  cursor-pointer w-[160px] h-[46px] text-white font-mono rounded-2xl border-2 mt-3 text-xl translate-y-0 transition-all duration-200 ease-linear hover:translate-y-1 hover:shadow-2xl">Register</button>
+            </div>
+            <div class="tooglebox_right absolute w-1/2 h-full  flex flex-col justify-center items-center z-2 -right-1/2 ">
+                <h1 class="text-white text-2xl">Hello,welcome back!</h1>
+                <p class="mb-3 text-3xl font-bold text-white">Have an account!</p>
+                <button class="login_btn  cursor-pointer w-[160px] h-[46px] text-white font-mono rounded-2xl border-2 mt-3 text-xl translate-y-0 transition-all duration-200 ease-linear hover:translate-y-1 hover:shadow-2xl">Login</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
