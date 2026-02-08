@@ -3,9 +3,12 @@ const registerbtn = document.querySelector('.btn_pt');
 const loginbtn = document.querySelector('.login_btn');
 
 
+
+
 registerbtn.addEventListener('click', () => {
     container.classList.add('active');
 } );
+
 
 
 
@@ -152,6 +155,10 @@ overlay.appendChild(redirectText);
 document.body.appendChild(overlay);
 
 
+
+
+
+
 if (!document.querySelector('#pulseAnimation')) {
     const style = document.createElement('style');
     style.id = 'pulseAnimation';
@@ -172,6 +179,10 @@ if (!document.querySelector('#pulseAnimation')) {
         window.location.href = 'home.html';
     }, 1800);
 });
+
+
+
+
 
 function showMessage(message, type) {
     const existingMsg = document.querySelector('.auth-message');
@@ -237,6 +248,9 @@ function showMessage(message, type) {
         setTimeout(() => msgDiv.remove(), 300);
     }, 3000);
 }
+
+
+
 
 
 

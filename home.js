@@ -1,6 +1,9 @@
 const links = document.querySelectorAll("nav a");
         const sections = document.querySelectorAll(".page-section");
         
+
+
+        
         links.forEach((link) => {
             link.addEventListener("click", (e) => {
                 e.preventDefault();
@@ -101,6 +104,10 @@ const links = document.querySelectorAll("nav a");
             `).join('');
         }
 
+
+
+
+
  
         function deleteExpense(id) {
             expenses = expenses.filter(exp => exp.id !== id);
@@ -142,6 +149,7 @@ const links = document.querySelectorAll("nav a");
             
 
             const categoryTotals = {};
+
             expenses.forEach(exp => {
                 categoryTotals[exp.category] = (categoryTotals[exp.category] || 0) + exp.amount;
             });
@@ -167,6 +175,7 @@ const links = document.querySelectorAll("nav a");
             }
             
 
+
             updateDailySpendingChart();
             
 
@@ -185,6 +194,9 @@ const links = document.querySelectorAll("nav a");
                 `).join('');
             }
         }
+
+
+
 
         let dailyChart = null;
 
@@ -220,6 +232,9 @@ const links = document.querySelectorAll("nav a");
             if (dailyChart) {
                 dailyChart.destroy();
             }
+
+
+
 
 
             const ctx = document.getElementById('spendingChart').getContext('2d');
@@ -292,6 +307,9 @@ const links = document.querySelectorAll("nav a");
                 }
             });
         }
+
+
+
 
 
         renderExpenses();
