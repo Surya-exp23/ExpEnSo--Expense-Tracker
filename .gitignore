@@ -1,0 +1,15 @@
+# Node modules (VERY IMPORTANT)
+node_modules/
+
+# Package lock (optional but recommended)
+package-lock.json
+package-lock.json
+
+# CSS build files (if generated)
+output.css
+
+# Environment files
+.env
+
+# Logs
+*.log
