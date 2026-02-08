@@ -73,3 +73,10 @@ It helps users track their expenses, understand spending habits, and manage mone
 - 🤖 AI-based spending suggestions  
 - 📱 Better mobile responsiveness  
 
+--- 
+
+## Demo Video
+
+https://www.linkedin.com/posts/surendra-singh-a39b281b4_frontend-webdevelopment-tailwindcss-activity-7421242172680867840-Hfnb?utm_source=share&utm_medium=member_desktop&rcm=ACoAADIAIc0BaINswZWStSnvVBP-G_7x8ZEaOQI  
+
+--- 
