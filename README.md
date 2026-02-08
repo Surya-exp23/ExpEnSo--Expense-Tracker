@@ -26,4 +26,51 @@ It helps users track their expenses, understand spending habits, and manage mone
 ---
 
 ## 📁 Project Structure
+│  
+├── auth.html # Authentication page  
+├── contactus.html # Contact page  
+├── home.html # Dashboard / main expense page  
+├── index.html # Landing page  
+│
+├── home.js   #Expense logic  
+├── script.js #Common JS functions  
+│
+├── input.css   #Source CSS  
+├── output.css  #Generated CSS  
+│    
+├── package.json   #Project dependencies  
+├── package-lock.json   #Dependency lock file  
+├── .gitignore    #Ignored files & folders  
+├── README.md # Project documentation  
+
+
+
+---
+
+## 📦 Installation & Setup
+
+1. Clone the repository
+   ```bash
+    https://github.com/Surya-exp23/ExpEnSo--Expense-Tracker
+
+2. Open index.html in your browser  
+(or use Live Server in VS Code)  
+
+--- 
+
+## 📌 Usage 
+
+- Open the app in your browser  
+- Navigate to the Home page  
+- Add your expenses with details  
+- Track and manage spending easily  
+
+--- 
+
+## 🌟 Future Improvements
+
+- 📈 Expense analytics & charts   
+- 💾 LocalStorage / Database support  
+- 🤖 AI-based spending suggestions  
+- 📱 Better mobile responsiveness  
 
