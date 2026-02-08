@@ -27,17 +27,17 @@ It helps users track their expenses, understand spending habits, and manage mone
 
 ## 📁 Project Structure
 │  
-├── auth.html # Authentication page  
-├── contactus.html # Contact page  
+├── auth.html # Authentication page    
+├── contactus.html # Contact page    
 ├── home.html # Dashboard / main expense page  
 ├── index.html # Landing page  
-│
+│  
 ├── home.js   #Expense logic  
 ├── script.js #Common JS functions  
-│
+│  
 ├── input.css   #Source CSS  
 ├── output.css  #Generated CSS  
-│    
+│      
 ├── package.json   #Project dependencies  
 ├── package-lock.json   #Dependency lock file  
 ├── .gitignore    #Ignored files & folders  
